@@ -1,0 +1,56 @@
+{
+  "name": "@my-website-nav/client",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:style": "stylelint src/`/*.{css,less,vue} --fix",
+    "prepare": "husky",
+    "commit": "cz",
+    "commitlint": "commitlint --config commitlint.config.ts --edit"
+  },
+  "dependencies": {
+    "@logto/node": "^3.0.3",
+    "@logto/vue": "^3.0.3",
+    "@supabase/supabase-js": "^2.47.1",
+    "@types/jsonwebtoken": "^9.0.7",
+    "nuxt": "^3.13.0",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@nuxt/eslint": "^0.5.7",
+    "@nuxt/eslint-config": "^0.5.7",
+    "@nuxt/icon": "^1.10.2",
+    "@nuxt/ui": "^2.20.0",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/stylelint-module": "^5.2.0",
+    "@nuxtjs/supabase": "^1.4.3",
+    "@unocss/nuxt": "^0.65.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.10.0",
+    "husky": "^9.1.6",
+    "jsonwebtoken": "^9.0.2",
+    "typescript": "^5.6.2",
+    "unocss": "^0.65.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

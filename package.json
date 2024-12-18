@@ -1,0 +1,16 @@
+{
+  "name": "my-website-nav",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx -y only-allow pnpm",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "pnpm install",
+    "dev:client": "pnpm -r --filter @my-website-nav/client dev",
+    "install:client": "pnpm -r --filter @my-website-nav/client install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
